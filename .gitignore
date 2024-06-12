@@ -6,3 +6,4 @@ Makefile.local
 .pytest_cache
 __pycache__
 .env
+.env.swp
