@@ -2,11 +2,9 @@ lint:
 	poetry run flake8 task_manager
 
 test:
-	#poetry run pytest --cov=task_manager
 	poetry run python3 manage.py test
 
 test-coverage:
-	#poetry run pytest --cov=task_manager --cov-report xml
 	poetry run coverage run manage.py test
 	poetry run coverage report
 	poetry run coverage xml
@@ -30,5 +28,17 @@ migrate:
 	poetry run python manage.py makemigrations
 	poetry run python manage.py migrate
 
+translate:
+	poetry run python manage.py makemessages -l ru --ignore .venv
+
 shell:
 	poetry run python manage.py shell_plus --ipython
+
+makemessages:
+	 django-admin makemessages --ignore="static" --ignore=".env" -l ru
+
+compile_translations:
+	poetry run python manage.py compilemessages --ignore .venv
+
+compilemessages:
+	django-admin compilemessages
