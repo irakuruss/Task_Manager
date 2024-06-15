@@ -26,7 +26,7 @@ msgstr "Исходный код"
 
 #: task_manager/templates/index.html:10
 msgid "Hello, World!"
-msgstr "Привет, Мир!"
+msgstr "Хеллоу, ворлд!"
 
 #: task_manager/templates/navbar.html:4
 msgid "Task manager"
