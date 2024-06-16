@@ -38,7 +38,7 @@ class StatusUpdateView(AuthRequiredMixin, SuccessMessageMixin, UpdateView):
     success_url = reverse_lazy('statuses')
     success_message = _('Status successfully changed')
     extra_context = {
-        'title': _('Status change'),
+        'title': _('Change status'),
         'button_text': _('Change'),
     }
 

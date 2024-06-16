@@ -10,13 +10,13 @@ class Task(models.Model):
         max_length=150,
         blank=False,
         unique=True,
-        verbose_name=_('Task name')
+        verbose_name=_('Name')
     )
     description = models.TextField(
         blank=True,
         verbose_name=_('Description')
     )
-    created_date = models.DateTimeField(
+    date_created = models.DateTimeField(
         auto_now_add=True,
         verbose_name=_('Creation date')
     )
