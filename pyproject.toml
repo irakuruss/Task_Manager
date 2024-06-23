@@ -19,6 +19,7 @@ django-bootstrap4 = "^24.3"
 ipython = "^8.25.0"
 django-extensions = "^3.2.3"
 whitenoise = "^6.6.0"
+django-filter = "^24.2"
 
 
 [build-system]
